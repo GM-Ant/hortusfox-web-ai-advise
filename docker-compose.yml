@@ -14,13 +14,14 @@ services:
     environment:
       APP_ADMIN_EMAIL: "admin@example.com"
       APP_ADMIN_PASSWORD: "password"
-      APP_TIMEZONE: "UTC"
+      APP_TIMEZONE: "Europe/Brussels"
       DB_HOST: db
       DB_PORT: 3306
       DB_DATABASE: hortusfox
       DB_USERNAME: user
       DB_PASSWORD: password
       DB_CHARSET: "utf8mb4"
+      LOG_ENABLE: 1
     depends_on:
       - db
 
